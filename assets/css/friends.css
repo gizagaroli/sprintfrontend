@@ -1,0 +1,289 @@
+.friends-page {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.friends-header {
+    position: relative;
+    padding: 16px 24px 0;
+}
+
+.status-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #000000;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.status-icons {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+}
+
+.back-btn {
+    position: absolute;
+    top: 52px;
+    left: 20px;
+    color: #000000;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.back-btn:hover {
+    color: #000000;
+}
+
+.friends-content {
+    flex: 1;
+    padding: 58px 22px 135px;
+    text-align: center;
+}
+
+.friends-logo {
+    width: 210px;
+    margin: 0 auto 18px;
+}
+
+.avatars-network {
+    position: relative;
+    width: 275px;
+    height: 250px;
+    margin: 0 auto 20px;
+}
+
+.avatar {
+    position: absolute;
+    overflow: hidden;
+    background: #eeeeee;
+    border-radius: 50%;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.avatar.center {
+    top: 92px;
+    left: 101px;
+    width: 76px;
+    height: 76px;
+}
+
+.a1 {
+    top: 0;
+    left: 119px;
+    width: 44px;
+    height: 44px;
+}
+
+.a2 {
+    top: 28px;
+    right: 34px;
+    width: 42px;
+    height: 42px;
+}
+
+.a3 {
+    top: 94px;
+    right: 6px;
+    width: 44px;
+    height: 44px;
+}
+
+.a4 {
+    right: 44px;
+    bottom: 20px;
+    width: 44px;
+    height: 44px;
+}
+
+.a5 {
+    bottom: 0;
+    left: 118px;
+    width: 44px;
+    height: 44px;
+}
+
+.a6 {
+    bottom: 24px;
+    left: 42px;
+    width: 44px;
+    height: 44px;
+}
+
+.a7 {
+    top: 95px;
+    left: 8px;
+    width: 44px;
+    height: 44px;
+}
+
+.a8 {
+    top: 30px;
+    left: 40px;
+    width: 44px;
+    height: 44px;
+}
+
+.dot {
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    background: #4fc3ff;
+    border-radius: 50%;
+}
+
+.d1 {
+    top: -7px;
+    left: 139px;
+}
+
+.d2 {
+    top: 34px;
+    right: 0;
+}
+
+.d3 {
+    top: 113px;
+    right: -5px;
+}
+
+.d4 {
+    bottom: 42px;
+    left: 137px;
+}
+
+.d5 {
+    top: 112px;
+    left: -5px;
+}
+
+.d6 {
+    top: 36px;
+    left: 4px;
+}
+
+.friends-text {
+    max-width: 300px;
+    margin: 0 auto 22px;
+    color: #111111;
+    font-size: 14px;
+    line-height: 1.08;
+}
+
+.invite-card {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 314px;
+    margin: 0 auto;
+    padding: 22px 20px 20px;
+    background: #f3f3f3;
+    border-radius: 20px;
+    text-align: left;
+}
+
+.invite-card span {
+    color: #666666;
+    font-size: 12px;
+}
+
+.invite-card h2 {
+    margin: 6px 0 14px;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.mini-avatars {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.mini-avatars img {
+    width: 29px;
+    height: 29px;
+    margin-left: -8px;
+    object-fit: cover;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+}
+
+.mini-avatars img:first-child {
+    margin-left: 0;
+}
+
+.more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 27px;
+    padding: 0 9px;
+    margin-left: 7px;
+    background: #d6ecff;
+    color: #0d57ff;
+    font-size: 11px;
+    border-radius: 999px;
+}
+
+.btn-participar,
+.btn-criar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 44px;
+    border-radius: 999px;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.btn-participar {
+    background: #cfe8fa;
+    color: #0d57ff;
+}
+
+.btn-criar {
+    background: #0d57ff;
+    color: #ffffff;
+}
+
+.btn-participar:hover {
+    color: #0d57ff;
+}
+
+.btn-criar:hover {
+    color: #ffffff;
+}
+
+.friends-footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 26px;
+    padding: 0 24px;
+}
+
+@media (max-width: 480px) {
+    .friends-content {
+        padding: 54px 20px 135px;
+    }
+
+    .avatars-network {
+        width: 270px;
+        height: 245px;
+    }
+
+    .friends-footer {
+        bottom: 24px;
+        padding-inline: 22px;
+    }
+}

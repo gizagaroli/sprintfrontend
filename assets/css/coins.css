@@ -1,0 +1,160 @@
+/*  BASE  */
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    background: #000;
+}
+
+/*  CONTAINER  */
+
+.coins-page {
+    position: relative;
+    width: 100%;
+    max-width: 390px;
+    height: 100vh;
+    margin: 0 auto;
+    overflow: hidden;
+    background: #000;
+}
+
+/* MOBILE FULL WIDTH */
+@media (max-width: 480px) {
+    .coins-page {
+        max-width: 100%;
+    }
+}
+
+/*  FUNDO  */
+
+.coins-bg {
+    position: absolute;
+    inset: 0;
+    background: url("../images/local/coinsbg.png") center/cover no-repeat;
+    z-index: 0;
+}
+
+/* HEADER */
+
+.coins-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    padding: 22px;
+}
+
+.back-btn {
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/*  CONTEÚDO  */
+
+.coins-content {
+    position: relative;
+    z-index: 1;
+
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 80px 24px 28px;
+    text-align: center;
+}
+
+/*  TOPO  */
+
+.top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.coin-img {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.coins-value {
+    margin: 0;
+    font-size: 70px;
+    font-weight: 900;
+    font-style: italic;
+    color: #ffb100;
+}
+
+/*  PARTE DE BAIXO  */
+
+.bottom {
+    margin-top: 90px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*  INFO BOX  */
+
+.info-box {
+    width: 100%;
+    max-width: 320px;
+
+    padding: 16px;
+
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+
+    border-radius: 18px;
+
+    color: #ffffff;
+    text-align: left;
+
+    margin-bottom: 20px;
+}
+
+.info-title {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 6px;
+}
+
+.info-title i {
+    font-size: 15px;
+}
+
+.info-box strong {
+    font-size: 14px;
+}
+
+.info-box p {
+    font-size: 13px;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* BOTÃO */
+
+.btn-primary {
+    width: 100%;
+    max-width: 320px;
+
+    padding: 14px;
+
+    background: #0d57ff;
+    color: #ffffff;
+
+    border-radius: 999px;
+
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+}

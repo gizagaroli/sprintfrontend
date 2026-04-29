@@ -1,0 +1,41 @@
+html,
+body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+body {
+    margin: 0;
+    background: #3f4248;
+    font-family: Arial, sans-serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+button,
+a,
+input {
+    font-family: inherit;
+}
+
+.app-screen {
+    width: 100%;
+    max-width: 390px;
+    min-height: 100vh;
+    margin: 0 auto;
+    background: #ffffff;
+    overflow-x: hidden;
+}
+
+@media (max-width: 480px) {
+    body {
+        background: #ffffff;
+    }
+
+    .app-screen {
+        max-width: 100%;
+    }
+}
