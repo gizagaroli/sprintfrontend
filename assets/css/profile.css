@@ -579,72 +579,12 @@
     color: #ffffff;
 }
 
-/* BOTTOM NAV */
-
-.bottom-nav {
-    position: absolute;
-    left: 22px;
-    right: 22px;
-    bottom: 14px;
-    z-index: 50;
-    height: 66px;
-    padding: 0 18px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: rgba(255, 255, 255, 0.96);
-    border: 1px solid #eaf0f8;
-    border-radius: 22px;
-    box-shadow: 0 14px 34px rgba(24, 43, 77, 0.12);
-    backdrop-filter: blur(16px);
-}
-
-.bottom-nav a {
-    width: 44px;
-    min-width: 44px;
-    height: 48px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 4px;
-    color: #7a8494;
-    font-size: 15px;
-    text-decoration: none;
-}
-
-.bottom-nav a span {
-    font-size: 8px;
-    font-weight: 750;
-}
-
-.bottom-nav a.active {
-    color: #0d57ff;
-}
-
-.bottom-nav .main-action {
-    width: 52px;
-    height: 52px;
-    min-width: 52px;
-    margin-top: -18px;
-    color: #ffffff;
-    background: linear-gradient(135deg, #0d57ff, #147cff);
-    border-radius: 50%;
-    box-shadow: 0 12px 26px rgba(13, 87, 255, 0.32);
-    font-size: 22px;
-}
-
-.bottom-nav .main-action span {
-    display: none;
-}
-
 /* TRANSIÇÕES */
 
 .profile-back,
 .edit-profile-btn,
 .section-title-row a,
 .instagram-btn,
-.bottom-nav a,
 .feature-card,
 .friends-card,
 .summary-card,
@@ -708,24 +648,6 @@
 .instagram-btn:hover {
     transform: translateY(-3px);
     box-shadow: 0 18px 34px rgba(193, 53, 216, 0.32);
-}
-
-.bottom-nav a:hover {
-    color: #0d57ff;
-    transform: translateY(-3px);
-}
-
-.bottom-nav .main-action:hover {
-    transform: translateY(-6px) scale(1.06);
-}
-
-.bottom-nav a:active,
-.instagram-btn:active,
-.edit-profile-btn:active,
-.feature-card:active,
-.friends-card:active,
-.summary-card:active {
-    transform: scale(0.97);
 }
 
 
