@@ -5,9 +5,9 @@ body {
 
 .desafio-page {
     position: relative;
-    height: 100vh;
+    min-height: 100dvh;
     background: #ffffff;
-    overflow: hidden;
+    overflow-x: hidden;
     color: #07113d;
 }
 
@@ -104,7 +104,7 @@ body {
 /* CONTENT */
 
 .desafio-content {
-    height: calc(100vh - 250px);
+    min-height: calc(100dvh - 250px);
     overflow-y: auto;
     overflow-x: hidden;
     padding: 20px 22px 118px;

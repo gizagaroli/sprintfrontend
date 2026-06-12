@@ -1,7 +1,7 @@
 .profile-page {
     position: relative;
-    height: 100vh;
-    overflow: hidden;
+    min-height: 100dvh;
+    overflow-x: hidden;
     background: #f7f9ff;
     color: #07111f;
     font-family: "Inter", sans-serif;
@@ -123,7 +123,7 @@
 /* CONTENT */
 
 .profile-content {
-    height: calc(100vh - 134px);
+    min-height: calc(100dvh - 134px);
     padding: 0 22px 128px;
     overflow-y: auto;
     overflow-x: hidden;
@@ -299,7 +299,7 @@
 }
 
 .summary-card {
-    height: 154px;
+    height: 200px;
     padding: 16px;
     overflow: hidden;
     background: rgba(255, 255, 255, 0.96);

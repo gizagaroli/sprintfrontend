@@ -1,5 +1,5 @@
 .marketplace-page {
-    height: 100vh;
+    min-height: 100dvh;
     overflow-y: auto;
     overflow-x: hidden;
     scrollbar-width: none;
