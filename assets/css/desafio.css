@@ -506,18 +506,12 @@ body {
 
 /* FOOTER */
 
+/* FOOTER */
+
 .desafio-footer {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding: 18px 22px 20px;
-    background: linear-gradient(
-        to top,
-        #ffffff 0%,
-        #ffffff 75%,
-        rgba(255,255,255,0) 100%
-    );
+    position: static;
+    padding: 0 0 18px;
+    background: transparent;
 }
 
 .register-btn {
