@@ -4,9 +4,9 @@ body {
     min-height: 100%;
 }
 
-body {
+    body {
     margin: 0;
-    background: #3f4248;
+    background: #ffffff;
     font-family: "Sora", sans-serif;
 
     display: flex;
@@ -52,18 +52,24 @@ input {
 }
 
 @media (max-width: 480px) {
+    html,
     body {
         background: #ffffff;
+        min-height: 100dvh;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    body {
         display: block;
-        overflow: auto;
     }
 
     .app-screen {
         max-width: 100%;
         min-height: 100dvh;
         height: auto;
-
         border-radius: 0;
         box-shadow: none;
+        background: #ffffff;
     }
 }
