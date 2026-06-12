@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marketplace</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <link rel="stylesheet" href="../assets/css/reset.css">
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
@@ -12,6 +12,7 @@
 
     <link rel="stylesheet" href="../assets/css/global.css">
     <link rel="stylesheet" href="../assets/css/marketplace.css">
+    <title>Marketplace</title>
 </head>
 
 <body>
@@ -38,7 +39,7 @@
 
     <main class="marketplace-content">
 
-        <label class="marketplace-search" for="search">
+        <label class="marketplace-search transition-all duration-300 focus-within:scale-[1.01]" for="search">
             <i class="fa-solid fa-magnifying-glass"></i>
             <input id="search" type="text" placeholder="Pesquisar produtos...">
 
@@ -49,9 +50,9 @@
 
         <div class="category-row">
             <button type="button" class="active">Todos</button>
-            <button type="button">Eletrônicos</button>
-            <button type="button">Acessórios</button>
-            <button type="button">Fitness</button>
+            <button type="button" class="transition-all duration-300 hover:scale-105 active:scale-95">Eletrônicos</button>
+            <button type="button" class="transition-all duration-300 hover:scale-105 active:scale-95">Acessórios</button>
+            <button type="button" class="transition-all duration-300 hover:scale-105 active:scale-95">Fitness</button>
         </div>
 
         <section class="featured-product">
@@ -87,7 +88,7 @@
             <div class="specials-row">
 
                 <article class="special-card">
-                    <button type="button" class="fav-btn">
+                    <button type="button" class="fav-btn transition-all duration-300 hover:scale-125">
                         <i class="fa-regular fa-heart"></i>
                     </button>
 
@@ -104,7 +105,7 @@
                 </article>
 
                 <article class="special-card">
-                    <button type="button" class="fav-btn">
+                    <button type="button" class="fav-btn transition-all duration-300 hover:scale-125">
                         <i class="fa-regular fa-heart"></i>
                     </button>
 
@@ -121,7 +122,7 @@
                 </article>
 
                 <article class="special-card">
-                    <button type="button" class="fav-btn">
+                    <button type="button" class="fav-btn transition-all duration-300 hover:scale-125">
                         <i class="fa-regular fa-heart"></i>
                     </button>
 
@@ -160,7 +161,7 @@
                         </span>
                     </div>
 
-                    <button type="button" class="fav-btn">
+                    <button type="button" class="fav-btn transition-all duration-300 hover:scale-125">
                         <i class="fa-regular fa-heart"></i>
                     </button>
                 </article>
@@ -177,7 +178,7 @@
                         </span>
                     </div>
 
-                    <button type="button" class="fav-btn">
+                    <button type="button" class="fav-btn transition-all duration-300 hover:scale-125">
                         <i class="fa-regular fa-heart"></i>
                     </button>
                 </article>

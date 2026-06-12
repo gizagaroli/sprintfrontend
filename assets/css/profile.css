@@ -321,7 +321,7 @@
     display: flex;
     justify-content: space-between;
     min-height: 132px;
-    overflow: hidden;
+    overflow-x: hidden;
     background: rgba(255, 255, 255, 0.96);
     border: 1px solid #eaf0f8;
     border-radius: 22px;

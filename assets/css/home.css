@@ -44,7 +44,7 @@ body::-webkit-scrollbar {
     padding: 35px 20px 34px;
     background: linear-gradient(135deg, #0876a8 0%, #079bd2 52%, #37c7f1 100%);
     color: #ffffff;
-    overflow: hidden;
+    overflow-x: hidden;
     border-radius: 0 0 32px 32px;
 
     display: grid;
@@ -323,7 +323,7 @@ body::-webkit-scrollbar {
     position: relative;
     height: 220px;
     margin: 20px 0 24px;
-    overflow: hidden;
+    overflow-x: hidden;
     border: 3px solid #15a9e8;
     border-radius: 24px;
     box-shadow: 0 14px 26px rgba(0, 82, 130, 0.18);
@@ -442,7 +442,7 @@ body::-webkit-scrollbar {
     margin-bottom: 16px;
     background: #ffffff;
     border-radius: 22px;
-    overflow: hidden;
+    overflow-x: hidden;
     text-decoration: none;
     box-shadow: 0 10px 24px rgba(25, 84, 130, 0.11);
 
