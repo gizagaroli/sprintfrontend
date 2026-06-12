@@ -12,14 +12,12 @@ O projeto tem como objetivo incentivar hábitos saudáveis por meio de gamifica�
 
 - HTML5
 - CSS3
-- Bootstrap
-- Font Awesome
 
 ---
 
 ##  Estrutura do projeto
 
-gsfrontend2/
+sprintfrontend/
 │
 ├── assets/
 │ ├── css/
