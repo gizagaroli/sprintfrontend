@@ -52,26 +52,6 @@
     background: rgba(255, 255, 255, 0.18);
 }
 
-.status-bar {
-    position: relative;
-    z-index: 2;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 18px 26px 0;
-    color: #07111f;
-    font-size: 14px;
-    font-weight: 800;
-}
-
-.status-icons {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    color: #07111f;
-    font-size: 12px;
-}
-
 .profile-header-main {
     position: relative;
     z-index: 2;
