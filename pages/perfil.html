@@ -7,7 +7,7 @@
   <title>Perfil</title>
 
   <link rel="stylesheet" href="../assets/css/reset.css">
-  <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <link rel="stylesheet" href="../assets/css/global.css">
@@ -19,7 +19,6 @@
   <div class="app-screen profile-page">
 
     <header class="profile-header">
-      <img src="../assets/images/global/bgbanner.png" class="profile-header-bg" alt="">
 
       <div class="status-bar">
         <span>9:41</span>
@@ -43,70 +42,110 @@
           <img src="../assets/images/global/moeda.png" alt="Moeda">
         </div>
       </div>
+
+      <span class="header-shape shape-one"></span>
+      <span class="header-shape shape-two"></span>
+      <span class="header-shape shape-three"></span>
     </header>
 
     <main class="profile-content">
 
-      <section class="profile-user">
+      <section class="profile-user-card">
         <img src="../assets/images/global/avatars/avatar2.png" alt="Renata" class="profile-img">
 
         <div>
           <h2>Renata</h2>
-          <a href="#" class="edit-profile-btn">Editar perfil</a>
+
+          <a href="#" class="edit-profile-btn">
+            Editar perfil
+            <i class="fa-solid fa-pen"></i>
+          </a>
         </div>
       </section>
 
       <section class="profile-achievements">
-        <h3>Conquistas</h3>
+        <div class="section-title-row">
+          <h3>Conquistas</h3>
+        </div>
 
         <div class="achievement-item">
-          <img src="../assets/images/global/medalha.png" alt="">
+          <div class="achievement-icon blue">
+            <i class="fa-solid fa-calendar-check"></i>
+          </div>
+
           <span>30 dias seguidos de registro</span>
+          <i class="fa-solid fa-chevron-right"></i>
         </div>
 
         <div class="achievement-item">
-          <img src="../assets/images/global/medalha.png" alt="">
+          <div class="achievement-icon cyan">
+            <i class="fa-solid fa-droplet"></i>
+          </div>
+
           <span>Meta de hidratação de 2L</span>
+          <i class="fa-solid fa-chevron-right"></i>
         </div>
 
         <div class="achievement-item">
-          <img src="../assets/images/global/medalha.png" alt="">
-          <span>100000 passos diário</span>
+          <div class="achievement-icon purple">
+            <i class="fa-solid fa-shoe-prints"></i>
+          </div>
+
+          <span>100000 passos diários</span>
+          <i class="fa-solid fa-chevron-right"></i>
         </div>
 
         <div class="achievement-item">
-          <img src="../assets/images/global/medalha.png" alt="">
+          <div class="achievement-icon orange">
+            <i class="fa-solid fa-spa"></i>
+          </div>
+
           <span>Aula de Yoga</span>
+          <i class="fa-solid fa-chevron-right"></i>
         </div>
 
         <div class="achievement-item">
-          <img src="../assets/images/global/medalha.png" alt="">
+          <div class="achievement-icon green">
+            <i class="fa-solid fa-people-group"></i>
+          </div>
+
           <span>Participação no Care +Friends</span>
+          <i class="fa-solid fa-chevron-right"></i>
         </div>
       </section>
 
       <section class="profile-section">
-        <h3>Resumo</h3>
+        <div class="section-title-row">
+          <h3>Resumo</h3>
+
+          <a href="#">Ver mais <i class="fa-solid fa-chevron-right"></i></a>
+        </div>
 
         <div class="summary-grid">
           <article class="summary-card">
             <span>Saúde</span>
+            <small>Evolução semanal</small>
             <img src="../assets/images/global/grafico.saude.png" class="graph-img" alt="Gráfico de saúde">
           </article>
 
           <article class="summary-card">
             <span>Hidratação</span>
+            <small>Meta diária</small>
             <img src="../assets/images/global/grafico.png" class="graph-img" alt="Gráfico de hidratação">
           </article>
         </div>
       </section>
 
       <section class="profile-section">
-        <h3>Exercícios</h3>
+        <div class="section-title-row">
+          <h3>Exercícios</h3>
+
+          <a href="#">Ver todos <i class="fa-solid fa-chevron-right"></i></a>
+        </div>
 
         <article class="feature-card">
           <div class="feature-text">
-            <span>PRATIQUE</span>
+            <span class="tag blue-tag">PRATIQUE</span>
             <h4>Yoga</h4>
             <strong class="green">10min</strong>
 
@@ -121,32 +160,35 @@
       </section>
 
       <section class="profile-section">
-        <h3>Alimentação</h3>
+        <div class="section-title-row">
+          <h3>Alimentação</h3>
 
-        <article class="feature-card">
+          <a href="#">Ver todas <i class="fa-solid fa-chevron-right"></i></a>
+        </div>
+
+        <article class="feature-card food-card">
           <div class="feature-text">
-            <span>DICAS</span>
+            <span class="tag pink-tag">DICAS</span>
             <h4>Prato do dia</h4>
             <strong class="pink">400kcal</strong>
           </div>
 
-          <img src="../assets/images/global/prato.png" alt="Prato do dia" class="feature-img round">
+          <img src="../assets/images/global/prato.png" alt="Prato do dia" class="feature-img food-img">
         </article>
       </section>
 
       <section class="profile-section">
-        <h3>Care +Friends</h3>
+        <div class="section-title-row">
+          <h3>Care +Friends</h3>
+
+          <a href="desafio.html">Ver todos <i class="fa-solid fa-chevron-right"></i></a>
+        </div>
 
         <article class="friends-card">
           <div class="feature-text">
-            <span>PRATIQUE</span>
+            <span class="tag purple-tag">PRATIQUE</span>
             <h4>Desafios</h4>
-            <strong class="pink">+30 pessoas</strong>
-
-            <div class="feature-coins">
-              <img src="../assets/images/global/moeda.png" alt="Moeda">
-              <small>Até 500 Care Coins</small>
-            </div>
+            <strong class="purple">+30 pessoas</strong>
           </div>
 
           <div class="mini-network">
@@ -156,9 +198,11 @@
             <img src="../assets/images/global/avatars/avatar4.png" class="n3" alt="">
             <img src="../assets/images/global/avatars/avatar5.png" class="n4" alt="">
             <img src="../assets/images/global/avatars/avatar6.png" class="n5" alt="">
+
             <span class="network-dot d1"></span>
             <span class="network-dot d2"></span>
             <span class="network-dot d3"></span>
+            <span class="network-dot d4"></span>
           </div>
         </article>
       </section>
@@ -179,10 +223,12 @@
     <nav class="bottom-nav">
       <a href="../index.html">
         <i class="fa-solid fa-house"></i>
+        <span>Início</span>
       </a>
 
       <a href="friends.html">
-        <i class="fa-solid fa-share-nodes"></i>
+        <i class="fa-solid fa-compass"></i>
+        <span>Explorar</span>
       </a>
 
       <a href="desafio.html" class="main-action">
@@ -191,10 +237,12 @@
 
       <a href="marketplace.html">
         <i class="fa-solid fa-gift"></i>
+        <span>Recompensas</span>
       </a>
 
       <a href="#" class="active">
-        <i class="fa-regular fa-user"></i>
+        <i class="fa-solid fa-user"></i>
+        <span>Perfil</span>
       </a>
     </nav>
 

@@ -7,7 +7,7 @@
     <title>Marketplace</title>
 
     <link rel="stylesheet" href="../assets/css/reset.css">
-    <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <link rel="stylesheet" href="../assets/css/global.css">
@@ -18,29 +18,20 @@
 
 <div class="app-screen marketplace-page">
 
-    <header class="marketplace-header">
-        <img src="../assets/images/global/bgbanner.png" class="marketplace-header-bg" alt="">
-
-        <div class="marketplace-status">
-            <span>9:41</span>
-
-            <div class="marketplace-status-icons">
-                <i class="fa-solid fa-signal"></i>
-                <i class="fa-solid fa-wifi"></i>
-                <i class="fa-solid fa-battery-three-quarters"></i>
-            </div>
-        </div>
-
+    <header class="marketplace-top">
         <div class="marketplace-header-row">
             <a href="coins.html" class="marketplace-back" aria-label="Voltar">
                 <i class="fa-solid fa-chevron-left"></i>
             </a>
 
-            <img src="../assets/images/global/logos/carefit.png" class="marketplace-logo" alt="Care Fit">
+            <div class="marketplace-heading-text">
+                <h1>Mercado</h1>
+                <p>Troque suas coins por produtos incríveis.</p>
+            </div>
 
             <div class="marketplace-balance">
-                <span>1340</span>
                 <img src="../assets/images/global/moeda.png" alt="Moeda">
+                <span>1340</span>
             </div>
         </div>
     </header>
@@ -49,90 +40,100 @@
 
         <label class="marketplace-search" for="search">
             <i class="fa-solid fa-magnifying-glass"></i>
-            <input id="search" type="text" placeholder="Pesquisar">
+            <input id="search" type="text" placeholder="Pesquisar produtos...">
+
+            <button type="button" aria-label="Filtros">
+                <i class="fa-solid fa-sliders"></i>
+            </button>
         </label>
+
+        <div class="category-row">
+            <button type="button" class="active">Todos</button>
+            <button type="button">Eletrônicos</button>
+            <button type="button">Acessórios</button>
+            <button type="button">Fitness</button>
+        </div>
 
         <section class="featured-product">
             <div class="featured-info">
+                <span class="featured-label">OFERTA DO DIA</span>
+
+                <h2>Sony Headphone</h2>
+
                 <div class="featured-price">
-                    <img src="../assets/images/global/moeda.png" alt="Moeda">
                     <strong>149</strong>
+                    <img src="../assets/images/global/moeda.png" alt="Moeda">
                 </div>
 
-                <div class="featured-text">
-                    <h2>Sem fio</h2>
-                    <p>Cancelamento de ruído</p>
-                </div>
+                <span class="featured-time">
+                    <i class="fa-regular fa-clock"></i>
+                    Por tempo limitado!
+                </span>
+            </div>
+
+            <div class="featured-discount">
+                85%<br>OFF
             </div>
 
             <img src="../assets/images/global/produtos/fone.png" class="featured-image" alt="Fone sem fio">
         </section>
 
         <section class="marketplace-section">
-            <h2 class="marketplace-title">ESPECIAIS</h2>
+            <div class="section-header">
+                <h2>Especiais</h2>
+                <a href="#">Ver todos</a>
+            </div>
 
             <div class="specials-row">
 
                 <article class="special-card">
-                    <div class="special-img-box">
-                        <img src="../assets/images/global/produtos/relogio.png" alt="Sport Band">
-                    </div>
+                    <button type="button" class="fav-btn">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img src="../assets/images/global/produtos/relogio.png" alt="Sport Band">
 
                     <div class="special-info">
                         <h3>Sport Band</h3>
 
-                        <div class="product-meta">
-                            <span>
-                                <img src="../assets/images/global/moeda.png" alt="Moeda">
-                                3559
-                            </span>
-
-                            <button type="button">
-                                <i class="fa-regular fa-heart"></i>
-                            </button>
-                        </div>
+                        <span>
+                            <img src="../assets/images/global/moeda.png" alt="Moeda">
+                            3559
+                        </span>
                     </div>
                 </article>
 
                 <article class="special-card">
-                    <div class="special-img-box">
-                        <img src="../assets/images/global/produtos/headset.png" alt="Headphone">
-                    </div>
+                    <button type="button" class="fav-btn">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img src="../assets/images/global/produtos/headset.png" alt="Headphone">
 
                     <div class="special-info">
                         <h3>Headphone</h3>
 
-                        <div class="product-meta">
-                            <span>
-                                <img src="../assets/images/global/moeda.png" alt="Moeda">
-                                1559
-                            </span>
-
-                            <button type="button">
-                                <i class="fa-regular fa-heart"></i>
-                            </button>
-                        </div>
+                        <span>
+                            <img src="../assets/images/global/moeda.png" alt="Moeda">
+                            1559
+                        </span>
                     </div>
                 </article>
 
                 <article class="special-card">
-                    <div class="special-img-box">
-                        <img src="../assets/images/global/produtos/celular.jpg" alt="Celular">
-                    </div>
+                    <button type="button" class="fav-btn">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img src="../assets/images/global/produtos/celular.jpg" alt="Celular">
 
                     <div class="special-info">
                         <h3>Celular</h3>
 
-                        <div class="product-meta">
-                            <span>
-                                <img src="../assets/images/global/moeda.png" alt="Moeda">
-                                20250
-                            </span>
-
-                            <button type="button">
-                                <i class="fa-regular fa-heart"></i>
-                            </button>
-                        </div>
+                        <span>
+                            <img src="../assets/images/global/moeda.png" alt="Moeda">
+                            20250
+                        </span>
                     </div>
                 </article>
 
@@ -140,25 +141,48 @@
         </section>
 
         <section class="marketplace-section">
-            <h2 class="marketplace-title">TODOS</h2>
+            <div class="section-header">
+                <h2>Todos os produtos</h2>
+                <a href="#">Ver todos</a>
+            </div>
 
-            <article class="list-product">
-                <img src="../assets/images/global/produtos/headset2.png" alt="Snopy Headphone">
+            <div class="products-list">
 
-                <div class="list-product-info">
-                    <h3>Snopy Headphone</h3>
-                    <p>Snopy SN-BT96 Preto com bluetooth e bateria de 24h</p>
+                <article class="product-card">
+                    <img src="../assets/images/global/produtos/headset2.png" alt="Snopy Headphone">
 
-                    <span>
-                        <img src="../assets/images/global/moeda.png" alt="Moeda">
-                        6559
-                    </span>
-                </div>
+                    <div class="product-info">
+                        <h3>Snopy Headphone</h3>
 
-                <button type="button" class="list-fav">
-                    <i class="fa-regular fa-heart"></i>
-                </button>
-            </article>
+                        <span>
+                            <img src="../assets/images/global/moeda.png" alt="Moeda">
+                            6559
+                        </span>
+                    </div>
+
+                    <button type="button" class="fav-btn">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </article>
+
+                <article class="product-card">
+                    <img src="../assets/images/global/produtos/relogio.png" alt="Smartwatch Pro">
+
+                    <div class="product-info">
+                        <h3>Smartwatch Pro</h3>
+
+                        <span>
+                            <img src="../assets/images/global/moeda.png" alt="Moeda">
+                            8899
+                        </span>
+                    </div>
+
+                    <button type="button" class="fav-btn">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </article>
+
+            </div>
         </section>
 
     </main>

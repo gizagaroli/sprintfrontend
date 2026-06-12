@@ -2,27 +2,14 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .friends-header {
     position: relative;
     padding: 16px 24px 0;
-}
-
-.status-bar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: #000000;
-    font-size: 15px;
-    font-weight: 700;
-}
-
-.status-icons {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 13px;
 }
 
 .back-btn {
@@ -40,20 +27,59 @@
 
 .friends-content {
     flex: 1;
-    padding: 58px 22px 135px;
+    height: 100%;
+    padding: 42px 22px 110px;
     text-align: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: none;
+}
+
+.friends-content::-webkit-scrollbar {
+    display: none;
+}
+
+.friends-footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 14px;
+    z-index: 20;
+    padding: 0 22px;
 }
 
 .friends-logo {
-    width: 210px;
+    width: 185px;
     margin: 0 auto 18px;
 }
 
 .avatars-network {
     position: relative;
-    width: 275px;
-    height: 250px;
-    margin: 0 auto 20px;
+
+    width: 320px;
+    height: 320px;
+
+    margin: 0 auto 26px;
+}
+
+.avatars-network::before {
+    content: "";
+
+    position: absolute;
+
+    top: 38px;
+    left: 38px;
+
+    width: 244px;
+    height: 244px;
+
+    border: 2px dashed rgba(79, 195, 255, 0.35);
+
+    border-radius: 50%;
+
+    animation: orbitSpin 30s linear infinite;
+
+    z-index: 0;
 }
 
 .avatar {
@@ -61,6 +87,30 @@
     overflow: hidden;
     background: #eeeeee;
     border-radius: 50%;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.avatar {
+    position: absolute;
+
+    overflow: hidden;
+
+    background: #eeeeee;
+
+    border-radius: 50%;
+
+    border: 3px solid #ffffff;
+
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.10);
+
+    z-index: 2;
 }
 
 .avatar img {
@@ -70,135 +120,229 @@
 }
 
 .avatar.center {
-    top: 92px;
-    left: 101px;
-    width: 76px;
-    height: 76px;
+    top: 115px;
+    left: 115px;
+
+    width: 90px;
+    height: 90px;
+
+    z-index: 10;
+
+    border: 4px solid #ffffff;
+
+    box-shadow:
+        0 12px 24px rgba(0,0,0,.12),
+        0 0 0 8px rgba(13,87,255,.08);
+}
+
+.avatar:hover {
+    transform: scale(1.7);
+    z-index: 20;
+}
+
+.avatar.selected {
+    transform: scale(1.2);
+
+    box-shadow:
+        0 10px 25px rgba(13,87,255,.25),
+        0 0 0 5px rgba(13,87,255,.15);
 }
 
 .a1 {
-    top: 0;
-    left: 119px;
-    width: 44px;
-    height: 44px;
+    top: 10px;
+    left: 138px;
+
+    width: 52px;
+    height: 52px;
 }
 
 .a2 {
-    top: 28px;
-    right: 34px;
-    width: 42px;
-    height: 42px;
+    top: 42px;
+    right: 30px;
+
+    width: 52px;
+    height: 52px;
 }
 
 .a3 {
-    top: 94px;
-    right: 6px;
-    width: 44px;
-    height: 44px;
+    top: 140px;
+    right: 0;
+
+    width: 52px;
+    height: 52px;
 }
 
 .a4 {
-    right: 44px;
-    bottom: 20px;
-    width: 44px;
-    height: 44px;
+    bottom: 38px;
+    right: 34px;
+
+    width: 52px;
+    height: 52px;
 }
 
 .a5 {
-    bottom: 0;
-    left: 118px;
-    width: 44px;
-    height: 44px;
+    bottom: 6px;
+    left: 136px;
+
+    width: 52px;
+    height: 52px;
 }
 
 .a6 {
-    bottom: 24px;
-    left: 42px;
-    width: 44px;
-    height: 44px;
+    bottom: 38px;
+    left: 34px;
+
+    width: 52px;
+    height: 52px;
 }
 
 .a7 {
-    top: 95px;
-    left: 8px;
-    width: 44px;
-    height: 44px;
+    top: 140px;
+    left: 0;
+
+    width: 52px;
+    height: 52px;
 }
 
 .a8 {
-    top: 30px;
-    left: 40px;
-    width: 44px;
-    height: 44px;
-}
+    top: 42px;
+    left: 30px;
 
-.dot {
-    position: absolute;
-    width: 7px;
-    height: 7px;
-    background: #4fc3ff;
-    border-radius: 50%;
-}
-
-.d1 {
-    top: -7px;
-    left: 139px;
-}
-
-.d2 {
-    top: 34px;
-    right: 0;
-}
-
-.d3 {
-    top: 113px;
-    right: -5px;
-}
-
-.d4 {
-    bottom: 42px;
-    left: 137px;
-}
-
-.d5 {
-    top: 112px;
-    left: -5px;
-}
-
-.d6 {
-    top: 36px;
-    left: 4px;
+    width: 52px;
+    height: 52px;
 }
 
 .friends-text {
-    max-width: 300px;
-    margin: 0 auto 22px;
-    color: #111111;
+    max-width: 290px;
+    margin: 0 auto 28px;
+
+    color: #4b5563;
+
     font-size: 14px;
-    line-height: 1.08;
+    line-height: 1.5;
 }
+
 
 .invite-card {
-    box-sizing: border-box;
     width: 100%;
-    max-width: 314px;
-    margin: 0 auto;
-    padding: 22px 20px 20px;
-    background: #f3f3f3;
-    border-radius: 20px;
+    max-width: 330px;
+
+    margin: 14px auto 0;
+
+    padding: 20px;
+
+    background: #f8fbff;
+
+    border: 1px solid #e7f1fb;
+
+    border-radius: 28px;
+
     text-align: left;
+
+    box-shadow: 0 12px 28px rgba(13, 87, 255, 0.08);
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
 }
 
-.invite-card span {
-    color: #666666;
+.invite-card:hover {
+    transform: translateY(-4px);
+
+    border-color: rgba(13, 87, 255, .18);
+
+    box-shadow:
+        0 18px 35px rgba(13, 87, 255, .12);
+}
+
+.invite-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.invite-label {
+    color: #0d57ff;
     font-size: 12px;
+    font-weight: 700;
+}
+
+.invite-badge {
+    padding: 6px 10px;
+
+    border-radius: 999px;
+
+    background: #0d57ff;
+
+    color: #ffffff;
+
+    font-size: 10px;
+    font-weight: 700;
 }
 
 .invite-card h2 {
-    margin: 6px 0 14px;
-    color: #000000;
-    font-size: 16px;
+    margin: 6px 0 16px;
+
+    color: #111827;
+
+    font-size: 17px;
     font-weight: 800;
+}
+
+.group-activity {
+    margin-top: 10px;
+    padding-top: 16px;
+
+    border-top: 1px dashed #d7e6f5;
+}
+
+.group-activity h3 {
+    margin: 0 0 14px;
+
+    color: #1f2937;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.activity-item {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 8px 0;
+}
+
+.activity-item img {
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+}
+
+.activity-item div {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.activity-item strong {
+    color: #111827;
+    font-size: 13px;
+}
+
+.activity-item div span {
+    color: #64748b;
+    font-size: 12px;
+}
+
+.activity-item small {
+    color: #94a3b8;
+    font-size: 11px;
 }
 
 .mini-avatars {
@@ -247,13 +391,79 @@
 }
 
 .btn-participar {
-    background: #cfe8fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 54px;
+
+    margin-top: 18px;
+
+    border-radius: 999px;
+
+    background: #dceeff;
     color: #0d57ff;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    text-decoration: none;
+    background: #dceeff;
+    color: #0d57ff;
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease,
+        background .25s ease;
+}
+
+.btn-participar:hover {
+    color: #0d57ff;
+
+    transform: translateY(-3px);
+
+    background: #cfe6ff;
+
+    box-shadow: 0 10px 20px rgba(13, 87, 255, .15);
 }
 
 .btn-criar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 58px;
+
+    border-radius: 999px;
+
     background: #0d57ff;
     color: #ffffff;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    box-shadow: 0 12px 24px rgba(13, 87, 255, 0.25);
+    background: #0d57ff;
+    color: #ffffff;
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease,
+        background .25s ease;
+}
+
+.btn-criar:hover {
+    color: #ffffff;
+
+    transform: translateY(-3px);
+
+    background: #0a4ae0;
+
+    box-shadow: 0 14px 28px rgba(13, 87, 255, .30);
 }
 
 .btn-participar:hover {
@@ -264,12 +474,9 @@
     color: #ffffff;
 }
 
-.friends-footer {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 26px;
-    padding: 0 24px;
+.btn-participar:active,
+.btn-criar:active {
+    transform: scale(.97);
 }
 
 @media (max-width: 480px) {
@@ -285,5 +492,31 @@
     .friends-footer {
         bottom: 24px;
         padding-inline: 22px;
+    }
+}
+
+@keyframes orbitSpin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(70deg);
+    }
+}
+
+.invite-card {
+    animation: cardReveal .6s ease;
+}
+
+@keyframes cardReveal {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
